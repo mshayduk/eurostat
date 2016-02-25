@@ -1,10 +1,10 @@
 # EU Open Data Explorer
-my  first shiny app
+my  first shiny demo application
 
 #### About this App ####
 
-This shiny app reads the tab-separated-values dataset of European Unemployment Rate, subsets it according to the user input and visualize the results with the <span class=code>googleVis</span> package for R. 
-The App appearance is driven by the <span class=code>shinydashboard</span>  R-package. The best use-case for dashboards is different compared to the case covered in this demo app, but dashboards suggest the out-of-box good-looking skin and compact layout.
+This shiny app reads the tab-separated-values dataset of European Unemployment Rate, subsets it according to the user input and visualize the results with the *googleVis* package for R. 
+The App appearance is driven by the *shinydashboard*  R-package. The best use-case for dashboards is different compared to the case covered in this demo app, but dashboards suggest the out-of-box good-looking skin and compact layout.
 
 The user inputs for subsetting the dataset (the ***selector input*** and the ***radio button***) are located in the sidebar. The output is presented in the tabulated body page. The additional ***selector input***  will appear automatically on the sidebar when needed.
 
@@ -31,4 +31,8 @@ The original dataset is extended with the official [ISO 3166-1 alpha-2](https://
 </div></p>
 
 The EU countries are selected from this dataset and merged with the original unemployment dataset.
-The resulting dataset is subsetted according to the user input and the result is presented in various types of [googleVis (CRAN)](https://cran.r-project.org/web/packages/googleVis/index.html) interactive plots. 
+The resulting dataset is subsetted according to the user input and the result is presented in various types of [googleVis (CRAN)](https://cran.r-project.org/web/packages/googleVis/index.html) interactive plots.
+
+The link to the web app on shiny server: <https://mshayduk.shinyapps.io/eurostat/> 
+
+
