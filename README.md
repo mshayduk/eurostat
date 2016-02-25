@@ -1,4 +1,4 @@
-# eurostat
+# EU Open Data Explorer
 my  first shiny app
 
 #### About this App ####
