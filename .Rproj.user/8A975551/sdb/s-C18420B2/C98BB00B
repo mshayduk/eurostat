@@ -1,0 +1,17 @@
+{
+    "contents" : "\n# This is the user-interface definition of a Shiny web application.\n# You can find out more about building applications with Shiny here:\n#\n# http://shiny.rstudio.com\n#\nlibrary(shiny)\nlibrary(plotly)\nlibrary(shinydashboard)\nlibrary(googleVis)\nlibrary(data.table)\n\nlibrary(shiny)\nlibrary(shinydashboard)\n\n\nheader <- dashboardHeader(title = \"EU Open Data explorer\")\nsidebar <- dashboardSidebar(\n    sidebarMenu(\n        menuItem(text = \"Main\", tabName = \"main\")\n    ),\n    selectInput(\n        inputId =  \"year\", \n        label = \" Select Year:\", \n        choices = 1994:2015\n    ),\n    radioButtons(\"age\", \"Age: \",\n                 c(\"< 25 years\" = \"Y_LT25\",\n                   \"> 25 years\" = \"Y25-74\",\n                   \"All\" = \"TOTAL\")),\n    uiOutput(\"ui\"),\n    htmlOutput(\"helptext\")\n)\n\nbody <- dashboardBody(\n    tabItems(\n        tabItem(tabName = \"main\",\n                fluidRow(\n                    tabBox(title=\"eurostat data\", id=\"tabs\", height = \"700px\", width = \"700px\",\n                           tabPanel(\"Bar Plot\", value=\"barplot\", htmlOutput(\"gvisbarplot\")),\n                           tabPanel(\"Map\", value=\"map\", htmlOutput(\"maptitle\"), htmlOutput(\"gvismap\"), \n                                    helpText(\"Grey areas: no data available\")),\n                           tabPanel(\"Annual Plot\", value=\"contryplot\",  htmlOutput(\"gviscontryplot\")),\n                           tabPanel(\"Current values\", value=\"values\", \n                                    h4(\"Selected Year:\"), verbatimTextOutput(\"oyear\"), \n                                    h4(\"Selected Ages:\"), verbatimTextOutput(\"oage\"), \n                                    h4(\"Selected country:\"), verbatimTextOutput(\"ocountry\")),\n                           tabPanel(\"Description\", value=\"datasource\", box(width=9, includeMarkdown(\"datasource.md\")))\n                    )\n                )\n                \n        )\n    )\n\n)\ndashboardPage(header, sidebar, body, skin = \"blue\")",
+    "created" : 1456427537041.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4144850140",
+    "id" : "C98BB00B",
+    "lastKnownWriteTime" : 1456439655,
+    "path" : "~/Work/Developer/Coursera/DataScience/Developing_Data_Products/eurostat/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

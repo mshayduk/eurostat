@@ -1,0 +1,9 @@
+{
+    "path" : "~/Work/Developer/Coursera/DataScience/Developing_Data_Products/eurostat",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

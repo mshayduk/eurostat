@@ -1,0 +1,9 @@
+name: eurostat
+account: mshayduk
+server: shinyapps.io
+appId: 85391
+bundleId: 380795
+url: https://mshayduk.shinyapps.io/eurostat/
+when: 1456438290.25885
+asMultiple: FALSE
+asStatic: FALSE
