@@ -51,7 +51,7 @@ The dataset contains the observations of the unemployment rate by year, age cate
 
 #### Data transformations ####
 
-The original dataset is extended with the official [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#search) country codes (see also: <http://www.iso.org/iso/country_codes>) and the country common name. The ISO codes for all countries is downloaded from here: [iso_3166_2_countries.csv](https://commondatastorage.googleapis.com/ckannet-storage/2011-11-25T132653/iso_3166_2_countries.csv). The first 3 entries of this ISO 3166-1 alpha-2 dataset are:
+The original dataset is extended with the official [ISO 3166-1 alpha-2](http://www.iso.org/iso/country_codes) country codes (see also: <http://www.iso.org/iso/country_codes>) and the country common name. The ISO codes for all countries is downloaded from here: [iso_3166_2_countries.csv](https://commondatastorage.googleapis.com/ckannet-storage/2011-11-25T132653/iso_3166_2_countries.csv). The first 3 entries of this ISO 3166-1 alpha-2 dataset are:
 
 <p><div align='center'>
 ```{r echo=FALSE, results='asis'}
